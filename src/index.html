@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="output.css">
+  <title>Shoply — Responsive Tailwind Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<!-- bg details -->
+<body class="bg-gray-50">
+  <header class="sticky bg-gray-50 top-0 z-10  shadow-sm">
+    <nav class="max-w-7xl mx-auto ">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center gap-x-5">
+          <a href="#" class="text-2xl font-extrabold text-indigo-600">EasyBuy</a>
+        </div>
+
+        <!-- desktop menu -->
+        <ul class="hidden md:flex items-center space-x-6 text-sm font-medium">
+          <li><a href="#home" class="hover:text-indigo-600">Home</a></li>
+          <li><a href="#products" class="hover:text-indigo-600">Products</a></li>
+          <li><a href="#reviews" class="hover:text-indigo-600">Reviews</a></li>
+          <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
+        </ul>
+
+        <div class="hidden md:flex items-center space-x-3">
+          <a href="#newsletter" class="px-4 py-2 bg-indigo-600 text-white rounded-lg text-sm hover:opacity-90">Subscribe</a>
+        </div>
+
+             <!-- hamburger -->
+        <div class="md:hidden">
+         <details>
+            <summary class="list-none p-2 rounded-md  focus:ring-2 focus:ring-indigo-500">
+ 
+             <i class="fa-solid fa-bars mx-2"></i>
+            </summary>
+            <div class="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-lg  ">
+              <ul class="">
+                <li><a href="#home" class="block px-4 py-2 text-sm hover:bg-gray-50">Home</a></li>
+                <li><a href="#products" class="block px-4 py-2 text-sm hover:bg-gray-50">Products</a></li>
+                <li><a href="#reviews" class="block px-4 py-2 text-sm hover:bg-gray-50">Reviews</a></li>
+                <li><a href="#contact" class="block px-4 py-2 text-sm hover:bg-gray-50">Contact</a></li>
+                <li><a href="#newsletter" class="block px-4 py-2 text-sm font-semibold text-indigo-600 hover:bg-gray-50">Subscribe</a></li>
+              </ul>
+            </div>
+      </details>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sliding Banner  -->
+    <section id="home" class="mt-6">
+      <div class="max-w-7xl mx-auto px-4 ">
+        <div class=" overflow-hidden rounded-xl shadow-md">
+          <div class="flex overflow-x-auto snap-x snap-mandatory ">
+
+            <!-- Slide 1 -->
+            <article class="min-w-full snap-center relative">
+              <img src="/Photos/nature 1.jpg" alt="slide 1" class="w-full  object-cover h-100 " />
+              <div class="absolute inset-0 bg-gradient-to-r from-black/40 flex items-center">
+                <div class="px-20  text-white">
+                  <h1 class="text-4xl font-extrabold">Quality Products, Delivered Fast</h1>
+                  <p class="mt-3 text-base ">Discover handcrafted items and curated goods for daily life. Shop small, support more.</p>
+                  <div class="mt-6">
+                    <a href="#products" class="inline-block px-5 py-2 bg-indigo-600 rounded-lg font-semibold hover:opacity-95">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 2 -->
+            <article class="min-w-full snap-center relative">
+              <img src="/Photos/nature2.jpg" alt="slide 2" class="w-full  object-cover h-100" />
+              <div class="absolute inset-0 bg-gradient-to-r from-black/40  flex items-center">
+                <div class="px-20  text-white">
+                  <h2 class="text-4xl font-extrabold">Sustainable & Stylish</h2>
+                  <p class="mt-3 text-base">Eco-friendly materials with modern design. Feel good about what you buy.</p>
+                  <div class="mt-6">
+                    <a href="#about" class="inline-block px-5 py-2 bg-indigo-600 rounded-lg font-semibold hover:opacity-95">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 3 -->
+            <article class="min-w-full snap-center relative">
+              <img src="/Photos/nature3.jpg" alt="slide 3" class="w-full  object-cover h-100" />
+              <div class="absolute inset-0 bg-gradient-to-r from-black/40  flex items-center">
+                <div class="px-20  text-white">
+                  <h2 class="text-4xl font-extrabold">Join Our Community</h2>
+                  <p class="mt-3 text-base">Exclusive drops, discounts, and a community of makers and buyers.</p>
+                  <div class="mt-6">
+                    <a href="#newsletter" class="inline-block px-5 py-2 bg-indigo-600 rounded-lg font-semibold hover:opacity-95">Subscribe</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="py-12">
+      <div class="max-w-7xl mx-auto px-4 ">
+        <div class="">
+          <h2 class="text-2xl font-bold">Featured Products</h2>
+          
+        </div>
+
+        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          
+          <!-- Card 1 -->
+          <article class="bg-white rounded-xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition p-4">
+            <img src="/Photos/Handmade Ceramic Mug.avif" alt="Product 1" class="w-full h-40 object-cover rounded-md" />
+            <h3 class="mt-3 font-semibold">Handmade Ceramic Mug</h3>
+            <p class="text-sm text-gray-500 mt-1">A cozy mug for your morning coffee — dishwasher safe.</p>
+            <div class="mt-4 flex items-center justify-between">
+              <p class="text-lg font-bold">$18</p>
+              <a href="#contact" class="px-3 py-1 bg-indigo-600 text-white rounded-md text-sm hover:opacity-95">Buy Now</a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="bg-white rounded-xl shadow-sm hover:shadow-lg  hover:scale-[1.02] transition p-4">
+            <img src="/Photos/Organic Cotton Tote.webp" alt="Product 2" class="w-full h-40 rounded-md" />
+            <h3 class="mt-3 font-semibold">Organic Cotton Tote</h3>
+            <p class="text-sm text-gray-500 mt-1">Carry all your essentials in a sustainable tote bag.</p>
+            <div class="mt-4 flex items-center justify-between">
+              <p class="text-lg font-bold">$25</p>
+              <a href="#contact" class="px-3 py-1 bg-indigo-600 text-white rounded-md text-sm hover:opacity-95">Buy Now</a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="bg-white rounded-xl shadow-sm hover:shadow-lg  hover:-translate-y-1 transition p-4">
+            <img src="/Photos/Minimal Leather Wallet2.jpg" alt="Product 3" class="w-full h-40 object-cover rounded-md" />
+            <h3 class="mt-3 font-semibold">Minimal Leather Wallet</h3>
+            <p class="text-sm text-gray-500 mt-1">Slim profile, premium leather, fits in any pocket.</p>
+            <div class="mt-4 flex items-center justify-between">
+              <p class="text-lg font-bold">$42</p>
+              <a href="#contact" class="px-3 py-1 bg-indigo-600 text-white rounded-md text-sm hover:opacity-95">Buy Now</a>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="bg-white rounded-xl shadow-sm hover:shadow-lg  hover:scale-[1.02] transition p-4">
+            <img src="/Photos/Bamboo Desk Organizer.jpg" alt="Product 4" class="w-full h-40 object-cover rounded-md" />
+            <h3 class="mt-3 font-semibold">Bamboo Desk Organizer</h3>
+            <p class="text-sm text-gray-500 mt-1">Keep your desk tidy with this natural bamboo organizer.</p>
+            <div class="mt-4 flex items-center justify-between">
+              <p class="text-lg font-bold">$30</p>
+              <a href="#contact" class="px-3 py-1 bg-indigo-600 text-white rounded-md text-sm hover:opacity-95">Buy Now</a>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="bg-white rounded-xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition p-4">
+            <img src="/Photos/Scented Soy Candle.webp" alt="Product 5" class="w-full h-40 object-cover rounded-md" />
+            <h3 class="mt-3 font-semibold">Scented Soy Candle</h3>
+            <p class="text-sm text-gray-500 mt-1">Long-burning candle, subtle fragrance.</p>
+            <div class="mt-4 flex items-center justify-between">
+              <p class="text-lg font-bold">$15</p>
+              <a href="#contact" class="px-3 py-1 bg-indigo-600 text-white rounded-md text-sm hover:opacity-95">Buy Now</a>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="bg-white rounded-xl shadow-sm hover:shadow-lg hover:scale-[1.02] transition p-4">
+            <img src="/Photos/Woven Throw Blanket.jpg" alt="Product 6" class="w-full h-40 object-cover rounded-md" />
+            <h3 class="mt-3 font-semibold">Woven Throw Blanket</h3>
+            <p class="text-sm text-gray-500 mt-1">Cozy throw for couch and bed — lightweight yet warm.</p>
+            <div class="mt-4 flex items-center justify-between">
+              <p class="text-lg font-bold">$48</p>
+              <a href="#contact" class="px-3 py-1 bg-indigo-600 text-white rounded-md text-sm hover:opacity-95">Buy Now</a>
+            </div>
+          </article>
+     
+        </div>
+      </div>
+    </section>
+
+    <!-- CUSTOMER REVIEWS -->
+    <section id="reviews" class="py-12 bg-white">
+      <div class="max-w-7xl mx-auto px-4 ">
+        <h2 class="text-2xl font-bold">What our customers say</h2>
+        
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <!-- Review 1 -->
+          <section class="bg-gray-50 rounded-xl p-6 shadow-sm">
+            <div class="flex items-center gap-4">
+              <img src="/Photos/avatar1.webp" alt="Customer 1" class="h-14 rounded-full " />
+              <div>
+                <p class="font-semibold">Mr. X</p>
+                <div class="flex items-center text-yellow-400 text-sm">
+                  <p>★★★★★</p>
+                </div>
+              </div>
+            </div>
+            <p class="mt-4 text-sm text-gray-600">Lovely products, shipped quickly. The ceramic mug is my favorite.</p>
+          </section>
+
+          <!-- Review 2 -->
+          <section class="bg-gray-50 rounded-xl p-6 shadow-sm">
+            <div class="flex items-center gap-4">
+              <img src="/Photos/avatar2.webp" alt="Customer 2" class="h-14 rounded-full" />
+              <div>
+                <p class="font-semibold">Mr. Y</p>
+                <div class="flex items-center text-yellow-400 text-sm">
+                  <p>★★★★☆</p>
+                </div>
+              </div>
+            </div>
+            <p class="mt-4 text-sm text-gray-600">Good quality and communication. One item arrived with minor scuffing but was resolved fast.</p>
+          </section>
+
+          <!-- Review 3 -->
+          <section class="bg-gray-50 rounded-xl p-6 shadow-sm">
+            <div class="flex items-center gap-4">
+              <img src="/Photos/avaatar3.webp" alt="Customer 3" class=" h-14 rounded-full" />
+              <div>
+                <p class="font-semibold">Mr. Z</p>
+                <div class="flex items-center text-yellow-400 text-sm">
+                  <p>★★★★★</p>
+                </div>
+              </div>
+            </div>
+            <p class="mt-4 text-sm text-gray-600">Amazing craftsmanship. Will definitely buy again.</p>
+          </section>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-12">
+      <div class="max-w-7xl mx-auto px-4 ">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-bold">Get in touch</h3>
+
+            <div class="mt-6 space-y-3">
+                <div class="flex space-x-3">
+              <h1 class="font-medium text-gray-700"> Email : </h1>
+              <p>jobayedhalim2@gmail.com</p>
+                </div>
+  
+                <div class="flex space-x-3">
+              <h1 class="font-medium text-gray-700"> Phone Number : </h1>
+              <p>01787150867</p>
+                </div>
+
+                <div class="flex space-x-3">
+              <h1 class="font-medium text-gray-700"> Address : </h1>
+              <p>3 no road, Meyor goli, 2no gate</p>
+                </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div>
+            <form class="bg-white rounded-xl p-6 shadow-sm space-y-4">
+              <div>
+                <h1 class=" text-sm font-medium text-gray-700">Name</h1>
+                <input type="text" placeholder="Your name" class="mt-1  w-full rounded-md  shadow-sm " />
+              </div>
+
+              <div>
+                <h1 class=" text-sm font-medium text-gray-700">Email</h1>
+                <input type="email" placeholder="you@gmail.com" class="mt-1  w-full rounded-md  shadow-sm " />
+              </div>
+
+              <div>
+                <h1 class="text-sm font-medium text-gray-700">Message</h1>
+                <textarea rows="4" placeholder="How can we help?" class="mt-1  w-full rounded-md  shadow-sm"></textarea>
+              </div>
+
+              <div class="text-right">
+                <button  class="px-4 py-2 bg-indigo-600 text-white rounded-md hover:opacity-95">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER  -->
+    <section id="newsletter" class="py-12 bg-indigo-600 text-white">
+      <div class="max-w-7xl mx-auto px-4 text-center ">
+        <h1 class="text-3xl font-extrabold">Join our newsletter</h1>
+        <p class="mt-2 text-sm ">Get exclusive offers, early access to new drops, and behind-the-scenes stories.</p>   
+         <button class="mt-6 px-5 py-2 bg-white text-indigo-600 font-semibold rounded-md">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-200 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="md:flex md:items-center md:justify-between">
+        <p class="text-sm">© 2025 Shoply. All rights reserved.</p>
+        <div class="mt-4 md:mt-0 flex items-center space-x-6">
+          <nav class="flex space-x-4">
+            <a href="#home" class="text-sm hover:text-white">Home</a>
+            <a href="#about" class="text-sm hover:text-white">About</a>
+            <a href="#contact" class="text-sm hover:text-white">Contact</a>
+          </nav>
+
+          <div class="flex items-center space-x-3">
+           <i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
